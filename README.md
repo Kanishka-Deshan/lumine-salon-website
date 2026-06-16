@@ -28,7 +28,7 @@ This website is created only for **design showcase purposes** using simple front
 ## Designed By
 
 **Kanishka Deshan**  
-Founder / Developer at **CK IT OPS**
+Co-Founder / Developer at **CK IT OPS**
 
 At **CK IT OPS**, we design and develop modern websites, business systems, web applications, and digital solutions for companies, startups, and personal brands.
 
