@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminé Salon Studio | Modern Beauty & Hair Salon</title>
+  <meta name="description" content="Luminé Salon Studio is a modern beauty salon showcase website with hair styling, bridal beauty, skincare, nails, and premium salon services." />
+
+  <!-- Font Awesome Icons -->
+  <!-- Fixed: removed the broken integrity hash that can block icons from loading -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="loading-active">
+
+  <!-- CK IT OPS Demo Loading Screen -->
+  <div class="site-loader" id="siteLoader" aria-label="Website loading screen">
+    <div class="loader-bg-grid"></div>
+    <div class="loader-orb loader-orb-one"></div>
+    <div class="loader-orb loader-orb-two"></div>
+
+    <div class="loader-panel">
+      <div class="loader-logo-stack">
+        <div class="ck-logo-wrap">
+          <img
+            src="assets/Web-Logo-Black.png"
+            alt="CK IT OPS logo"
+            class="ck-loader-logo"
+          />
+        </div>
+
+        <div class="loader-divider">
+          <span></span>
+          <i class="fa-solid fa-scissors"></i>
+          <span></span>
+        </div>
+
+        <div class="salon-loader-brand">
+          <span class="salon-loader-logo-circle">
+            <img
+              src="assets/lumine-symbol-logo.png"
+              alt="Luminé Salon logo"
+              class="salon-loader-logo"
+            />
+          </span>
+          <div>
+            <strong>Luminé</strong>
+            <small>Salon Studio</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="loader-progress">
+        <span></span>
+      </div>
+
+      <p class="loader-demo-text">
+        This is a demo site designed by <strong>CK IT OPS</strong>.
+      </p>
+      <p class="loader-copyright">
+        All rights reserved by CK IT OPS Team.
+      </p>
+    </div>
+  </div>
+  <div class="cursor-glow"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <nav class="navbar glass">
+		<a href="#home" class="brand" aria-label="Luminé Salon Studio home">
+		  <span class="brand-mark logo-circle">
+			<img 
+			  src="assets/lumine-symbol-logo.png" 
+			  alt="Luminé Salon logo" 
+			  class="brand-logo"
+			/>
+		  </span>
+		  <span>
+			<strong>Luminé</strong>
+			<small>Salon Studio</small>
+		  </span>
+		</a>
+
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#pricing">Packages</a></li>
+        <li><a href="#contact">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg-orb orb-one"></div>
+      <div class="hero-bg-orb orb-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> Premium beauty experience</p>
+          <h1>Where beauty meets confidence, style and luxury.</h1>
+          <p class="hero-text">
+            Luminé Salon Studio is a modern showcase salon concept created for stylish hair transformations,
+            bridal beauty, skin glow treatments, nail artistry, and complete beauty care.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Book Appointment <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#services" class="btn btn-soft">
+              View Services <i class="fa-solid fa-scissors"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats glass">
+            <div>
+              <strong>8+</strong>
+              <span>Years Style Experience</span>
+            </div>
+            <div>
+              <strong>2.5k+</strong>
+              <span>Happy Clients</span>
+            </div>
+            <div>
+              <strong>35+</strong>
+              <span>Beauty Services</span>
+            </div>
+          </div>
+        </div>
+
+		<div class="hero-visual reveal delay-1">
+		  <div class="image-card main-image">
+			<img 
+			  src="assets/hero-salon.png" 
+			  alt="Elegant salon hairstyle model" 
+			  class="hero-salon-img"
+			/>
+		  </div>
+
+          <div class="floating-card appointment-card glass">
+            <span class="mini-icon"><i class="fa-regular fa-calendar-check"></i></span>
+            <div>
+              <strong>Today’s Special</strong>
+              <p>Hair spa + styling from Rs. 4,500</p>
+            </div>
+          </div>
+
+          <div class="floating-card rating-card glass">
+            <span class="mini-icon"><i class="fa-solid fa-star"></i></span>
+            <div>
+              <strong>4.9/5</strong>
+              <p>Client rating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+        <span></span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About -->
+	<section class="section about" id="about">
+	  <div class="container about-grid">
+		<div class="about-images reveal">
+
+		  <div class="image-card about-img-large">
+			<img 
+			  src="assets/salon-interior.png" 
+			  alt="Luxury salon interior" 
+			  class="about-section-img"
+			/>
+		  </div>
+
+		  <div class="image-card about-img-small glass">
+			<img 
+			  src="assets/stylist-working.png" 
+			  alt="Stylist working on customer hair" 
+			  class="about-section-img"
+			/>
+		  </div>
+
+		</div>
+
+        <div class="section-content reveal delay-1">
+          <p class="eyebrow"><i class="fa-solid fa-heart"></i> About us</p>
+          <h2>A calm, elegant space designed for your glow-up.</h2>
+          <p>
+            Luminé Salon Studio was imagined as a premium beauty destination where every guest feels
+            relaxed, confident, and beautifully cared for. Our team blends modern trends with personalized
+            consultation to create looks that match your personality, lifestyle, and occasion.
+          </p>
+          <p>
+            From everyday haircuts to bridal makeovers, our approach is simple: high-quality products,
+            clean techniques, stylish presentation, and a warm customer experience.
+          </p>
+
+          <div class="signature-box glass">
+            <div>
+              <strong>Our promise</strong>
+              <span>Soft luxury, expert care, beautiful results.</span>
+            </div>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+
+          <div class="feature-list">
+            <div><i class="fa-solid fa-check"></i> Premium product care</div>
+            <div><i class="fa-solid fa-check"></i> Friendly expert stylists</div>
+            <div><i class="fa-solid fa-check"></i> Hygienic modern setup</div>
+            <div><i class="fa-solid fa-check"></i> Personalized consultation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><i class="fa-solid fa-gem"></i> Our services</p>
+          <h2>Everything you need for a complete beauty transformation.</h2>
+          <p>
+            Choose from our signature salon services crafted for daily beauty, professional styling,
+            special events, and bridal moments.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h3>Haircut & Styling</h3>
+            <p>Layer cuts, trims, blow-dry, curls, straight styling, and modern hair shaping.</p>
+            <span>From Rs. 2,500</span>
+          </article>
+
+          <article class="service-card glass reveal delay-1">
+            <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>Hair Color & Highlights</h3>
+            <p>Balayage, global color, root touch-up, fashion shades, and glossy toning.</p>
+            <span>From Rs. 6,500</span>
+          </article>
+
+          <article class="service-card glass reveal delay-2">
+            <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+            <h3>Facial & Skin Glow</h3>
+            <p>Hydrating facials, cleanup, brightening treatments, and relaxing skin rituals.</p>
+            <span>From Rs. 4,000</span>
+          </article>
+
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+            <h3>Nails & Care</h3>
+            <p>Manicure, pedicure, gel polish, nail extensions, and elegant nail art designs.</p>
+            <span>From Rs. 3,000</span>
+          </article>
+
+          <article class="service-card glass reveal delay-1">
+            <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>Bridal Makeover</h3>
+            <p>Complete bridal makeup, hair styling, saree draping, and event-ready beauty.</p>
+            <span>From Rs. 28,000</span>
+          </article>
+
+          <article class="service-card glass reveal delay-2">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Party Makeup</h3>
+            <p>Soft glam, evening glam, birthday looks, engagement looks, and photoshoot makeup.</p>
+            <span>From Rs. 8,500</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Strip -->
+    <section class="experience-strip">
+      <div class="container strip-grid">
+        <div class="strip-item">
+          <i class="fa-solid fa-leaf"></i>
+          <span>Organic-inspired care</span>
+        </div>
+        <div class="strip-item">
+          <i class="fa-solid fa-shield-heart"></i>
+          <span>Clean & hygienic tools</span>
+        </div>
+        <div class="strip-item">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>Relaxing lounge feel</span>
+        </div>
+        <div class="strip-item">
+          <i class="fa-solid fa-camera-retro"></i>
+          <span>Photo-ready finish</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><i class="fa-regular fa-images"></i> Portfolio gallery</p>
+          <h2>Showcase your salon work beautifully.</h2>
+			<p>
+			  Explore our premium salon portfolio featuring bridal beauty, hair coloring,
+			  nail art, makeup sessions, and elegant salon interiors.
+			</p>
+        </div>
+
+		<div class="gallery-grid">
+
+		  <div class="gallery-item tall reveal">
+			<img 
+			  src="assets/bridal-look.png" 
+			  alt="Elegant bridal makeup and hairstyle look" 
+			  class="gallery-img"
+			/>
+		  </div>
+
+		  <div class="gallery-item reveal delay-1">
+			<img 
+			  src="assets/hair-color.png" 
+			  alt="Hair coloring and highlights salon service" 
+			  class="gallery-img"
+			/>
+		  </div>
+
+		  <div class="gallery-item reveal delay-2">
+			<img 
+			  src="assets/nail-art.png" 
+			  alt="Luxury nail art design" 
+			  class="gallery-img"
+			/>
+		  </div>
+
+		  <div class="gallery-item wide reveal">
+			<img 
+			  src="assets/salon-wide.png" 
+			  alt="Wide angle luxury salon interior" 
+			  class="gallery-img"
+			/>
+		  </div>
+
+		  <div class="gallery-item reveal delay-1">
+			<img 
+			  src="assets/makeup-session.png" 
+			  alt="Professional makeup session in salon" 
+			  class="gallery-img"
+			/>
+		  </div>
+
+		</div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why">
+      <div class="container why-grid">
+        <div class="section-content reveal">
+          <p class="eyebrow"><i class="fa-solid fa-sparkles"></i> Why choose us</p>
+          <h2>More than a salon. A complete beauty experience.</h2>
+          <p>
+            We focus on comfort, creativity, and consistency. Every appointment begins with a consultation
+            so the final result feels natural, confident, and uniquely yours.
+          </p>
+
+          <div class="why-list">
+            <div class="why-row glass">
+              <span><i class="fa-solid fa-user-check"></i></span>
+              <div>
+                <h3>Personal consultation</h3>
+                <p>We recommend styles and treatments based on your face shape, hair type, skin tone, and event.</p>
+              </div>
+            </div>
+
+            <div class="why-row glass">
+              <span><i class="fa-solid fa-bottle-droplet"></i></span>
+              <div>
+                <h3>Quality products</h3>
+                <p>Premium salon products help protect your hair and skin while giving a smooth finish.</p>
+              </div>
+            </div>
+
+            <div class="why-row glass">
+              <span><i class="fa-solid fa-clock"></i></span>
+              <div>
+                <h3>Appointment-friendly</h3>
+                <p>Simple booking process, clear packages, and comfortable time slots for busy clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+		<div class="why-card glass reveal delay-1">
+		  <img 
+			src="assets/premium-salon-result.png" 
+			alt="Premium salon result with elegant hairstyle" 
+			class="why-card-img"
+		  />
+
+		  <div class="why-card-content">
+			<h3>Signature Glow Session</h3>
+			<p>Hair wash, styling, skin refresh, and soft glam finish for your special day.</p>
+			<a href="#contact">Reserve a slot <i class="fa-solid fa-arrow-right"></i></a>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><i class="fa-solid fa-tags"></i> Beauty packages</p>
+          <h2>Simple packages for every beauty need.</h2>
+          <p>
+            These sample prices are created for your showcase website. You can change the currency,
+            services, and prices anytime.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card glass reveal">
+            <div class="price-top">
+              <span class="package-icon"><i class="fa-solid fa-feather"></i></span>
+              <h3>Fresh Look</h3>
+              <p>For daily grooming and quick refresh.</p>
+            </div>
+            <div class="price">Rs. 6,500 <small>/upwards</small></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Hair wash & blow-dry</li>
+              <li><i class="fa-solid fa-check"></i> Basic haircut or trim</li>
+              <li><i class="fa-solid fa-check"></i> Eyebrow shaping</li>
+              <li><i class="fa-solid fa-check"></i> Mini skin cleanup</li>
+            </ul>
+            <a href="#contact" class="btn btn-soft">Choose Package</a>
+          </article>
+
+          <article class="price-card featured glass reveal delay-1">
+            <div class="popular-badge">Most Popular</div>
+            <div class="price-top">
+              <span class="package-icon"><i class="fa-solid fa-star"></i></span>
+              <h3>Glow Luxe</h3>
+              <p>Perfect for parties and special outings.</p>
+            </div>
+            <div class="price">Rs. 14,500 <small>/upwards</small></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Hair styling or curls</li>
+              <li><i class="fa-solid fa-check"></i> Party makeup look</li>
+              <li><i class="fa-solid fa-check"></i> Express facial glow</li>
+              <li><i class="fa-solid fa-check"></i> Gel polish manicure</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book Glow Luxe</a>
+          </article>
+
+          <article class="price-card glass reveal delay-2">
+            <div class="price-top">
+              <span class="package-icon"><i class="fa-solid fa-crown"></i></span>
+              <h3>Bridal Royal</h3>
+              <p>Complete premium bridal preparation.</p>
+            </div>
+            <div class="price">Rs. 48,000 <small>/upwards</small></div>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Bridal makeup</li>
+              <li><i class="fa-solid fa-check"></i> Bridal hair styling</li>
+              <li><i class="fa-solid fa-check"></i> Saree or dress draping</li>
+              <li><i class="fa-solid fa-check"></i> Trial consultation</li>
+            </ul>
+            <a href="#contact" class="btn btn-soft">Plan Bridal Look</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+	<!-- Team -->
+	<section class="section team">
+	  <div class="container">
+		<div class="section-heading reveal">
+		  <p class="eyebrow"><i class="fa-solid fa-users"></i> Our stylists</p>
+		  <h2>Creative hands behind every beautiful finish.</h2>
+		  <p>
+			Meet our talented beauty experts who bring creativity, care, and premium salon experience
+			to every client.
+		  </p>
+		</div>
+
+		<div class="team-grid">
+
+		  <article class="team-card glass reveal">
+			<div class="team-img">
+			  <img 
+				src="assets/stylist-amelia.png" 
+				alt="Amelia Rose senior hair stylist" 
+				class="team-photo"
+			  />
+			</div>
+			<h3>Amelia Rose</h3>
+			<p>Senior Hair Artist</p>
+			<div class="socials">
+			  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+			  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+			  <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		  </article>
+
+		  <article class="team-card glass reveal delay-1">
+			<div class="team-img">
+			  <img 
+				src="assets/stylist-maya.png" 
+				alt="Maya Elle makeup and bridal specialist" 
+				class="team-photo"
+			  />
+			</div>
+			<h3>Maya Elle</h3>
+			<p>Makeup & Bridal Specialist</p>
+			<div class="socials">
+			  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+			  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+			  <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		  </article>
+
+		  <article class="team-card glass reveal delay-2">
+			<div class="team-img">
+			  <img 
+				src="assets/stylist-sofia.png" 
+				alt="Sofia Pearl skin and nail care expert" 
+				class="team-photo"
+			  />
+			</div>
+			<h3>Sofia Pearl</h3>
+			<p>Skin & Nail Care Expert</p>
+			<div class="socials">
+			  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+			  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+			  <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		  </article>
+
+		</div>
+	  </div>
+	</section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><i class="fa-solid fa-comments"></i> Client love</p>
+          <h2>Beautiful words from imagined happy clients.</h2>
+        </div>
+
+        <div class="testimonial-wrap glass reveal">
+          <button class="slider-btn prev" aria-label="Previous testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="testimonial-slider">
+            <article class="testimonial active">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                “The salon has such a luxurious calm feeling. My hair color looked premium and natural.
+                I loved the final styling so much.”
+              </p>
+              <h3>Nethmi Fernando</h3>
+              <span>Hair color client</span>
+            </article>
+
+            <article class="testimonial">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                “Their bridal consultation was very detailed. The final look was elegant, soft, and exactly
+                what I imagined for my wedding.”
+              </p>
+              <h3>Kiara Senanayake</h3>
+              <span>Bridal client</span>
+            </article>
+
+            <article class="testimonial">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>
+                “Very clean, stylish, and friendly. The nail art was beautiful and the team gave great advice
+                for aftercare.”
+              </p>
+              <h3>Ashani Perera</h3>
+              <span>Nail care client</span>
+            </article>
+          </div>
+
+          <button class="slider-btn next" aria-label="Next testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow"><i class="fa-solid fa-calendar-check"></i> Book your visit</p>
+          <h2>Ready for your next beauty moment?</h2>
+          <p>
+            Send an appointment request for haircut, styling, makeup, nails, facials, or bridal consultation.
+            This demo form uses JavaScript validation and shows a success message without backend setup.
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-card glass">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Call us</strong>
+                <span>+94 77 123 4567</span>
+              </div>
+            </div>
+            <div class="contact-card glass">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Visit studio</strong>
+                <span>Flower Road, Colombo 07</span>
+              </div>
+            </div>
+            <div class="contact-card glass">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Open hours</strong>
+                <span>Mon - Sun: 9.00 AM - 8.00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form glass reveal delay-1" id="bookingForm">
+          <h3>Appointment Request</h3>
+
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row two-cols">
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+94 77 123 4567" required />
+            </div>
+            <div>
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Haircut & Styling</option>
+              <option>Hair Color & Highlights</option>
+              <option>Facial & Skin Glow</option>
+              <option>Nails & Care</option>
+              <option>Bridal Makeover</option>
+              <option>Party Makeup</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..."></textarea>
+          </div>
+
+          <button class="btn btn-primary full-btn" type="submit">
+            Send Request <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+	<!-- Footer -->
+	<footer class="footer">
+	  <div class="container footer-grid">
+		<div>
+		  <a href="#home" class="brand" aria-label="Luminé Salon Studio home">
+			<span class="brand-mark logo-circle">
+			  <img 
+				src="assets/lumine-symbol-logo.png" 
+				alt="Luminé Salon logo" 
+				class="brand-logo"
+			  />
+			</span>
+			<span>
+			  <strong>Luminé</strong>
+			  <small>Salon Studio</small>
+			</span>
+		  </a>
+
+		  <p>
+			A modern salon showcase website concept for beauty, hair, makeup, nails, bridal,
+			and skincare services.
+		  </p>
+
+		  <div class="footer-credit glass">
+			<p>
+			  This demo showcase website design was created by the 
+			  <strong>CK IT OPS</strong> team.
+			</p>
+			<a href="https://www.ckitops.com" target="_blank" rel="noopener noreferrer">
+			  <i class="fa-solid fa-globe"></i>
+			  www.ckitops.com
+			</a>
+		  </div>
+		</div>
+
+		<div>
+		  <h3>Explore</h3>
+		  <a href="#about">About</a>
+		  <a href="#services">Services</a>
+		  <a href="#gallery">Gallery</a>
+		  <a href="#pricing">Packages</a>
+		</div>
+
+		<div>
+		  <h3>Services</h3>
+		  <a href="#services">Hair Styling</a>
+		  <a href="#services">Bridal Makeup</a>
+		  <a href="#services">Facials</a>
+		  <a href="#services">Nails</a>
+		</div>
+
+		<div>
+		  <h3>Follow us</h3>
+		  <div class="footer-socials">
+			<a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+			<a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="footer-bottom">
+		<p>
+		  © <span id="year"></span> CK IT OPS Team. All rights reserved. 
+		  Website design showcased for Luminé Salon Studio.
+		</p>
+	  </div>
+	</footer>
+
+  <a href="#contact" class="floating-book glass" aria-label="Book appointment">
+    <i class="fa-solid fa-calendar-plus"></i>
+    <span>Book</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
