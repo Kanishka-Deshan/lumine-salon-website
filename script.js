@@ -181,7 +181,7 @@ window.addEventListener("scroll", () => {
 
 
 // CK IT OPS demo loading screen
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const siteLoader = document.getElementById("siteLoader");
 
   if (!siteLoader) return;
@@ -189,9 +189,9 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     siteLoader.classList.add("loader-hidden");
     document.body.classList.remove("loading-active");
-  }, 6000);
+  }, 900);
 
   setTimeout(() => {
     siteLoader.remove();
-  }, 6000);
+  }, 1700);
 });

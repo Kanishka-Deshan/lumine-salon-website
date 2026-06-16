@@ -6,6 +6,11 @@
   <title>Luminé Salon Studio | Modern Beauty & Hair Salon</title>
   <meta name="description" content="Luminé Salon Studio is a modern beauty salon showcase website with hair styling, bridal beauty, skincare, nails, and premium salon services." />
 
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="assets/Web-Logo-Black.png" />
+  <link rel="preload" as="image" href="assets/apple-touch-icon.png" />
+
   <!-- Font Awesome Icons -->
   <!-- Fixed: removed the broken integrity hash that can block icons from loading -->
   <link
@@ -37,6 +42,10 @@
             src="assets/Web-Logo-Black.png"
             alt="CK IT OPS logo"
             class="ck-loader-logo"
+            width="102"
+            height="102"
+            decoding="async"
+            fetchpriority="high"
           />
         </div>
 
@@ -49,9 +58,13 @@
         <div class="salon-loader-brand">
           <span class="salon-loader-logo-circle">
             <img
-              src="assets/lumine-symbol-logo.png"
+              src="assets/apple-touch-icon.png"
               alt="Luminé Salon logo"
               class="salon-loader-logo"
+              width="58"
+              height="58"
+              decoding="async"
+              fetchpriority="high"
             />
           </span>
           <div>
