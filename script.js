@@ -189,9 +189,9 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     siteLoader.classList.add("loader-hidden");
     document.body.classList.remove("loading-active");
-  }, 8000);
+  }, 6000);
 
   setTimeout(() => {
     siteLoader.remove();
-  }, 8000);
+  }, 6000);
 });
