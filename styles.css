@@ -93,10 +93,87 @@ textarea {
   opacity: 0.65;
 }
 
+/* Demo Newsbar */
+.demo-newsbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 16px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0a0a0a, #991b1b, #dc2626, #991b1b, #0a0a0a);
+  background-size: 240% 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: demoNewsbarGradient 8s linear infinite;
+}
+
+.demo-newsbar-track {
+  display: inline-flex;
+  align-items: center;
+  min-width: max-content;
+  animation: demoNewsbarScroll 42s linear infinite;
+  will-change: transform;
+}
+
+.demo-newsbar-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  padding-right: 28px;
+  min-width: max-content;
+}
+
+.demo-newsbar strong {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.demo-newsbar:hover {
+  color: #ffffff;
+  background: linear-gradient(90deg, #161616, #991b1b, #ef4444, #991b1b, #161616);
+  background-size: 240% 100%;
+}
+
+.demo-newsbar:hover .demo-newsbar-track {
+  animation-play-state: paused;
+}
+
+@keyframes demoNewsbarScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes demoNewsbarGradient {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Header */
 .site-header {
   position: fixed;
-  top: 18px;
+  top: 44px;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -1403,7 +1480,7 @@ textarea:focus {
 
 @media (max-width: 860px) {
   .site-header {
-    top: 12px;
+    top: 40px;
   }
 
   .navbar {
@@ -1430,7 +1507,7 @@ textarea:focus {
 
   .nav-links {
     position: fixed;
-    top: 96px;
+    top: 124px;
     left: 20px;
     right: 20px;
     z-index: 1001;

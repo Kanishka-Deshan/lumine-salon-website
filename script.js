@@ -10,6 +10,26 @@ const form = document.getElementById("bookingForm");
 const formStatus = document.getElementById("formStatus");
 const year = document.getElementById("year");
 
+// Deter casual use of Inspect Element and common DevTools shortcuts.
+document.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
+document.addEventListener("keydown", (event) => {
+  const key = event.key.toLowerCase();
+  const isDevToolsShortcut =
+    event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && ["i", "j", "c"].includes(key)) ||
+    (event.ctrlKey && key === "u") ||
+    (event.metaKey && event.altKey && ["i", "j", "c"].includes(key)) ||
+    (event.metaKey && key === "u");
+
+  if (isDevToolsShortcut) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+});
+
 // Set current year
 if (year) {
   year.textContent = new Date().getFullYear();
